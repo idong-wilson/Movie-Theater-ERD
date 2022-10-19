@@ -55,6 +55,7 @@ FROM customer;
 --alter table table_name rename to new_name
 ALTER TABLE genre RENAME TO category;
 
+
 -- Insert customers' info customer table
 INSERT INTO customer(
 	customer_id,	
@@ -193,7 +194,7 @@ values(
 DROP TABLE orger_movie;
 
 
--- Removing duplicate rows from 'Student' table */
+-- Removing duplicate rows from 'movie' table */
 DELETE FROM movie WHERE movie_name = 'Peter Pan';
 
 DELETE FROM movie WHERE movie_name = 'Lawrence of Arabia';
