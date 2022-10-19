@@ -181,7 +181,7 @@ INSERT INTO movie(
 	theater_id,
 	genre_id)
 values(
-	'122',
+	'162',
 	'Lawrence of Arabia',
 	'The story of T.E. Lawrence, the English officer who successfully united and led the diverse',
 	'8',
@@ -191,6 +191,18 @@ values(
 
 -- remove TABLE completely
 DROP TABLE orger_movie;
+
+
+-- Removing duplicate rows from 'Student' table */
+DELETE FROM movie WHERE movie_name = 'Peter Pan';
+
+DELETE FROM movie WHERE movie_name = 'Lawrence of Arabia';
+
+SELECT *
+FROM movie;
+
+
+   
 
 
 
